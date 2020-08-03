@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import './App.css';
-import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
@@ -76,7 +75,7 @@ onInputChange = (event) => {
 
 onButtonSubmit = () => {
 	this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://lit-dawn-61570.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -86,7 +85,7 @@ onButtonSubmit = () => {
     .then(response => response.json())
 	.then(response => { 
         if(response) {
-            fetch('http://localhost:3000/image', {
+            fetch('https://lit-dawn-61570.herokuapp.com/image', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
