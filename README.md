@@ -1,4 +1,4 @@
-![FaceGenie](https://user-images.githubusercontent.com/21014451/187797714-6f1696af-74d7-4d62-b1c6-da21357f09d8.png)
+![FaceGenie](https://user-images.githubusercontent.com/21014451/187798358-d101d10d-1193-4929-a0a0-b1ff33be04fb.png)
 
 # FaceGenie
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rohanperi/FaceGenie)
